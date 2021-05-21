@@ -37,7 +37,7 @@ function ViewSinglePost(props) {
       }
     }
     fetchPost();
-  }, []);
+  }, [id]);
 
   if (!isLoading && !post) {
     return <NotFound />;
